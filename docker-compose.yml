@@ -3,5 +3,7 @@ services:
   web:
     build: .
     command: grunt
+    volumes:
+      - ./dist:/src/dist
     ports:
       - "9006:9006"
